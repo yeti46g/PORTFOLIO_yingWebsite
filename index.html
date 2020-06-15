@@ -3,12 +3,42 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <meta property='og:title' content="Ying's Portfolio"/>
+    <meta property="og:image" content="http://www.yinggeng.website/images/og.jpg"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Ying's Portfolio</title>
+    
+<style>
+
+
+
+
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+/* default is 1rem or 16px */
+
+font-weight: 400;
+line-height: 1.5;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.card {
+    height:480px;
+}
+
+}
+</style>
+
+
   </head>
   <body>
 
@@ -45,39 +75,69 @@
     <button type="button" class="btn btn-outline-success bg-success text-white" ><a href="https://medium.com/@ying.geng5" target="_blank" class="text-white">MEDIUM</a></button>
     <button type="button" class="btn btn-outline-success bg-success text-white"><a href="https://github.com/yeti46g" target="_blank" class="text-white">GITHUB</a></button>
     <button type="button" class="btn btn-outline-success bg-success text-white"><a href="https://www.linkedin.com/in/ying-geng-825ab840/" target="_blank" class="text-white">LINKEDIN</a></button>
-    <button type="button" target="_blank" class="btn btn-outline-success bg-success text-white">RESUME</button>
+    <button type="button" class="btn btn-outline-success bg-success text-white"><a href="images/resumeWebsite.pdf" target="_blank" class="text-white">RESUME</a></button>
     </div>
     </div>
     
     
       <div class="container">
+          
+         <div class="row">
       
-      <div class="row">
-
         <div class="col-md-4">
             
-          <div class="card mb-4 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-success" style="border-width:5px;">
-            <div class="card-body">
-              <p class="card-text text-success">Message Classification Web App</p> <!--change font later-->
-              <!-- add summary later-->
+          <div class="card mb-3 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-danger" style="border-width:5px;" >
+              
+              
+              <div class="card-body">
+              <p class="card-text text-success">Data Dashboard built with Plotly</p>
+              
+              <p style="font-size:80%">In this project, I build an data dashbord of the World Bank Land Use data using the Plotly interactive plotting library. The dashboard is then deployed on the web using Heroku.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-success"><a href="https://github.com/yeti46g/PORTFOLIO_messageClassificationWebApp" target="_blank" class="text-success">CODE</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-success">WEB APP</button>
+                  <button type="button" class="btn btn-sm btn-outline-success"><a href="https://github.com/yeti46g/PORTFOLIO_dataDashboardPlotly" class="text-success" target="_blank">CODE</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-success"><a href="https://yingfirstdashboard.herokuapp.com" class="text-success" target="_blank">WEB APP</a></button>
                 </div>
               </div>
             </div>
-            
-             <img src="images/messageClassification.png" alt="..." class="img-thumbnail">
-             
+         
+             <img src="images/dashboard.png" alt="data dashboard" class="img-fluid img-thumbnail">
+                
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-4 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-success" style="border-width:5px;">
+            
+          <div class="card mb-3 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-info" style="border-width:5px;">
+             
+                <div class="card-body">
+                <p class="card-text text-success">Message Classification Web App</p> <!--change font later-->
+                <!-- add summary later-->
+                <p style="font-size:80%">In this project, I build an automated ETL pipeline that loads, cleans, and saves message text data to a SQLite3 database. Cleaned data are then loaded to an automated ML pipeline that processes natural language and trains models for classifying the text messages into different categories. Trained model is saved as a Pickle file and finally loaded to a web app.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-success"><a href="https://github.com/yeti46g/PORTFOLIO_messageClassificationWebApp" target="_blank" class="text-success">CODE</a></button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-success">WEB APP</button>-->
+                </div>
+              </div>
+             
+             
+            </div>
+             <img src="images/message.png" alt="Message Classification Web App" class="img-thumbnail">
+            
+          </div>
+        </div>
+        
+
+        <div class="col-md-4">
+          <div class="card mb-3 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-warning" style="border-width:5px;">
 
             <div class="card-body">
+                
               <p class="card-text text-success">Classification with Pyspark + AWS</p>
+              <!--Summary-->
+              <p style="font-size:80%">In this project, I practice manipulating and building machine learning models on large dataset (12GB) with Spark's dataframe, SQL, and ML APIs, through the PySpark python interface on Amazon AWS.</p>
 
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -93,10 +153,13 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-4 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-success" style="border-width:5px;" >
+          <div class="card mb-3 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-secondary" style="border-width:5px;" >
            
             <div class="card-body">
               <p class="card-text text-success">Recommendation Engine</p>
+              <!--Summary-->
+              <p style="font-size:80%">In this project, I analyze the interactions that users have with articles on the IBM Watson Studio platform and make recommendations to them about new articles that they might like.</p>
+              
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-success">CODE</button>
@@ -109,23 +172,7 @@
           </div>
         </div>
         
-          <div class="col-md-4">
-          <div class="card mb-4 shadow p-3 mb-5 bg-white rounded border-right-0 border-left-0 border-bottom-0 border-success" style="border-width:5px;" >
-           
-            <div class="card-body">
-              <p class="card-text text-success">Data Dashboard built with Plotly + Flask</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-success"><a href="https://github.com/yeti46g/PORTFOLIO_dataDashboardPlotly" class="text-success" target="_blank">CODE</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-success"><a href="https://yingfirstdashboard.herokuapp.com" class="text-success" target="_blank">WEB APP</a></button>
-                </div>
-              </div>
-            </div>
-            
-             <img src="images/dashboard.png" alt="data dashboard" class="img-thumbnail">
-             
-          </div>
-        </div>
+
       </div>
     </div>
 
